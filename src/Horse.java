@@ -3,9 +3,9 @@
  */
 public class Horse
 {
-    String name;
-    double speed;
-    double distance;
+    private String name;
+    private double speed;
+    private double distance;
 
     public void move(){
         distance += speed * Math.random();

@@ -15,12 +15,13 @@ public class Hippodrome
 
     public Horse getWinner(){
         Horse winner=horses.get(0);
+        double maxDistance=winner.getDistance();
         for (Horse horse : horses)
         {
-            double maxDistance=0;
 
-            if (horse.distance>maxDistance){
-                maxDistance = horse.distance;
+
+            if (horse.getDistance()>maxDistance){
+                maxDistance = horse.getDistance();
                 winner = horse;
             }
         }
